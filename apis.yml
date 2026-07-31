@@ -1,8 +1,26 @@
 aid: openeyes-insurance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openeyes-insurance.png
 name: OpenEyes Insurance
-description: OpenEyes Insurance is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: OpenEyes Insurance (OpenEyes Insurance Agency, Inc.) is an Austin, Texas-based insurtech
+  startup, with an additional New York office, that provides commercial auto insurance for truck and bus
+  fleet operators bundled with proprietary risk-prevention technology. Its offering pairs fleet coverage
+  with real-time driver monitoring, AI dashcams, safety analytics, customized driver training, and 24/7
+  claims management, serving both insurance agents (For Agents) and fleet operators directly (For Fleets).
+  Founded by Yoav Oron (CEO), Dr. Omry Sendik (CTO), and Dan Charash (Chairman), OpenEyes emerged from
+  stealth in February 2023 with a $23M Series A led by Insight Partners with Pitango First. The company
+  operates a customer-facing fleet dashboard but does not publish a public developer API, portal, or
+  documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/openeyes-insurance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +28,22 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Commercial Auto Insurance
+- Fleet Management
+- Telematics
+- Risk Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +51,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/openeyes-insurance-domain-security.yml
 - type: Website
   url: https://openeyes.com/
+- type: Blog
+  url: https://openeyes.com/blog/
+- type: Login
+  url: https://dashboard.openeyes.com/
